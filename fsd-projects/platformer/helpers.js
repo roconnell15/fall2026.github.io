@@ -597,18 +597,18 @@ function drawCollectables() {
       );
     } else {
       //draw the icons at the top if collected
-      if (collectables[i].alpha > 0.4) {
-        collectables[i].alpha = collectables[i].alpha - 0.007;
-      }
-      ctx.globalAlpha = collectables[i].alpha;
-      ctx.drawImage(
-        collectables[i].image,
-        200 + 100 * i,
-        10,
-        collectableWidth,
-        collectableHeight
-      );
-      ctx.globalAlpha = 1;
+      // if (collectables[i].alpha > 0.4) {
+      //   collectables[i].alpha = collectables[i].alpha - 0.007;
+      // }
+      // ctx.globalAlpha = collectables[i].alpha;
+      // ctx.drawImage(
+      //   collectables[i].image,
+      //   200 + 100 * i,
+      //   10,
+      //   collectableWidth,
+      //   collectableHeight
+      // );
+      // ctx.globalAlpha = 1;
     }
 
     // Horizontal movement logic for collectables

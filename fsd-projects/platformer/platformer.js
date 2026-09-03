@@ -18,32 +18,47 @@ $(function () {
 
     // Create walls - do not delete or modify this code
     createPlatform(-50, -50, canvas.width + 100, 50); // top wall
-    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "rgb(118, 0, 233)"); // bottom wall
+    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200, "rgb(225, 195, 255)"); // bottom wall
     createPlatform(-50, -50, 50, canvas.height + 500); // left wall
     createPlatform(canvas.width, -50, 50, canvas.height + 100); // right wall
 
     //////////////////////////////////
     // ONLY CHANGE BELOW THIS POINT //
     //////////////////////////////////
-
+    for (let i = 100; i < canvas.width; i += 100) {
+      createPlatform(i, canvas.height, -1, -canvas.height);
+    }
+    for (let i = 100; i < canvas.height; i += 100) {
+      createPlatform(canvas.width, i, -canvas.width, -1);
+    }
     // TODO 1 - Enable the Grid
      toggleGrid();
 
 
     // TODO 2 - Create Platforms
-    createPlatform(100, 600, 20, 290);
+    createPlatform(100, 620, 20, 290);
     createPlatform(350, 650, 200, 50, "#8e6009");
+    createPlatform(100, 500, 200, 20, "#222222", 100, 400, 2, 200, 500, 3);
+    createBadPlatform(100, 618, 20, 10, "red")
+    createFakePlatform(0, 620, 285, 10);
+
+
+
+     for(var i = 500; i >=0; i-=5){
+      createPlatform(700, i + 500, i, 10);
+     }
 
 
 
     // TODO 3 - Create Collectables
-    createCollectable('database' ,200, 300, 0.5, 0.9999)
+    createCollectable('star' ,700, 200, 0.5, 0.9999)
 
 
     
     // TODO 4 - Create Cannons
-
-
+    createCannon("top", 700, 1000);
+    createCannon('top', 700, 1100)
+    createCannon("top", 700, 1200);
     
     
     //////////////////////////////////
