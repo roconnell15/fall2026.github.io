@@ -37,8 +37,8 @@ $(function () {
 
     // TODO 2 - Create Platforms
     createPlatform(100, 620, 20, 290);
-    createFakePlatform(350, 650, 200, 50, "#00000036");
-    createPlatform(100, 400, 200, 20, "#f8070727", 100, 400, 2, 300, 400, 2);
+    createFakePlatform(350, 650, 200, 50, "#eeff99a1");
+    createPlatform(100, 400, 200, 20, "green", 100, 400, 2, 300, 400, 2);
     createBadPlatform(100, 618, 20, 10, "red")
     createFakePlatform(0, 620, 285, 10);
     //Loop for creating staircase
