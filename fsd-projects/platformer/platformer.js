@@ -37,28 +37,22 @@ $(function () {
 
     // TODO 2 - Create Platforms
     createPlatform(100, 620, 20, 290);
-    createPlatform(350, 650, 200, 50, "#8e6009");
-    createPlatform(100, 500, 200, 20, "#222222", 100, 400, 2, 200, 500, 3);
+    createFakePlatform(350, 650, 200, 50, "#00000036");
+    createPlatform(100, 400, 200, 20, "#f8070727", 100, 400, 2, 300, 400, 2);
     createBadPlatform(100, 618, 20, 10, "red")
     createFakePlatform(0, 620, 285, 10);
-
-
-
+    //Loop for creating staircase
      for(var i = 500; i >=0; i-=5){
-      createPlatform(700, i + 500, i, 10);
+      createPlatform(0, i + 500, i, 10);
      }
-
-
-
     // TODO 3 - Create Collectables
     createCollectable('star' ,700, 200, 0.5, 0.9999)
-
-
-    
+    createCollectable("star", 300, 200, 0.5, 0.9999);
     // TODO 4 - Create Cannons
     createCannon("top", 700, 1000);
     createCannon('top', 700, 1100)
-    createCannon("top", 700, 1200);
+    createCannon("top", 700, 1200, 20, 20, 200, 700, 5);
+    createCannon("right", 100, 700, 100, 100, 0, 200, 2);
     
     
     //////////////////////////////////

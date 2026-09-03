@@ -664,6 +664,7 @@ function checkForWin() {
   if (collectables.length === 0) {
     return; // If there are no collectables, we can't win
   }
+  
   for (var i = 0; i < collectables.length; i++) {
     if (collectables[i].collected !== true) {
       return; // If any collectable is not collected, we can't win yet
