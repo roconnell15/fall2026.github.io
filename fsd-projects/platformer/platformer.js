@@ -25,20 +25,15 @@ $(function () {
     //////////////////////////////////
     // ONLY CHANGE BELOW THIS POINT //
     //////////////////////////////////
-    for (let i = 100; i < canvas.width; i += 100) {
-      createPlatform(i, canvas.height, -1, -canvas.height);
-    }
-    for (let i = 100; i < canvas.height; i += 100) {
-      createPlatform(canvas.width, i, -canvas.width, -1);
-    }
+
     // TODO 1 - Enable the Grid
-     toggleGrid();
+     //toggleGrid();
 
 
     // TODO 2 - Create Platforms
     createPlatform(100, 620, 20, 290);
     createFakePlatform(350, 650, 200, 50, "#eeff99a1");
-    createPlatform(100, 400, 200, 20, "green", 100, 400, 2, 300, 400, 2);
+    createPlatform(100, 400, 200, 20, "green", 400, 400, 2, 300, 400, 2);
     createBadPlatform(100, 618, 20, 10, "red")
     createFakePlatform(0, 620, 285, 10);
     //Loop for creating staircase
